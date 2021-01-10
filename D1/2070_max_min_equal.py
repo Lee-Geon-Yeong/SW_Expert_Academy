@@ -9,7 +9,7 @@ for i in range(T):
     else:
         print("#{} <".format(i + 1))
 
-
+ 
 # def solution(a, b):
 #     if a > b:
 #         return '>'
