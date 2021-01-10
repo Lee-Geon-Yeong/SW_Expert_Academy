@@ -1,1 +1,6 @@
-# SW_Expert_Academy
+## Python 문법
+
+1. 자료형
++ 정수형
++ 실수형
++ 수 자료형의 연산
