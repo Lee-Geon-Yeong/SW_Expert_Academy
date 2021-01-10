@@ -5,4 +5,4 @@ for x in range(T):
     for y in odd_input:
         if y % 2 == 1:
             sum += y
-    print(f'#{x+1} {sum}')
+    print(f'#{x+1} {sum}') 
