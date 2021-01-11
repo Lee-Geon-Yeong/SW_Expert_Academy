@@ -139,3 +139,13 @@ sqrt(x) : x의 제곱근 반환
 gcd(a, b) : a, b의 최대공약수 반환
 math.pi 또는 math.e : 파이 또는 자연상수 e 출력
 ```
+### 7. 시간과 메모리 측정
+```python
+import time
+start_time=time.time() # 측정 시작
+
+# 이 부분에 프로그램 소스 코드
+
+end_time = time.time() # 측정 종료
+print("time : ", end_time - start_time) # 수행 시간 출력
+```
