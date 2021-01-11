@@ -56,6 +56,17 @@ print(result)
  - 키 데이터 추출은 keys(), 값 데이터 추출은 values()
 + 집합 자료형
 
+  + 안녕
+   + Hello
+    + hi
+
+  * 안녕
+   * Hello
+    * hi
+
+  - 안녕
+   - Hello
+    - hi
 ### 2. 조건문
 
 ### 3. 반복문
