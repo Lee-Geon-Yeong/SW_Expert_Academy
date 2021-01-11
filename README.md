@@ -111,8 +111,31 @@ product : permutations와 유사. 중복허용하는 순열 구하기
 combinations_with_replacement : combinations와 유사. 중복허용하는 조합 구하기
 ```
 
-```
 + heapq : 힙(Heap) 기능을 제공하는 라이브러리이다. 우선순위 큐 기능을 구현하기 위해 사용한다.
+```python
+heapq.heappush() : 힙에 원소 삽입
+heapq.heappop() : 힙에서 원소 꺼냄
+```
 + bisect : 이진 탐색(Binary Search) 기능을 제공하는 라이브러리이다.
+```python
+bisect_left(a, x) : 정렬된 순서를 유지하면서 리스트 a에 데이터 x를 삽입할 가장 왼쪽 인덱스를 찾는 메서드
+bisect_right(a, x) : 정렬된 순서를 유지하면서 리스트 a에 데이터 x를 삽입할 가장 오른쪽 인덱스를 찾는 메서드
+count_by_range(a, left_value, right_value) : 정렬된 리스트 a에서 값이 [left_value, right_value]에 속하는 데이터의 개수 반환
+```
 + collections : 덱(deque), 카운터(Counter) 등의 유용한 자료구조를 포함하고 있는 라이브러리이다.
+```python
+deque : 큐 구현
+popleft() : 첫 번째 원소 제거할 때
+pop() : 마지막 원소 제거할 때
+appendleft(x) : 첫 번째 인덱스에 원소 x 삽입
+append(x) : 마지막 인덱스에 원소 x 삽입
+
+counter : 등장 횟수를 세는 기능 제공
+```
 + math : 필수적인 수학적 기능을 제공하는 라이브러리이다. 팩토리얼, 제곱근, 최대공약수(GCD), 삼각함수 관련 함수부터 파이(pi)와 같은 상수를 포함하고 있다.
+```
+factorial(x) : x!
+sqrt(x) : x의 제곱근 반환
+gcd(a, b) : a, b의 최대공약수 반환
+math.pi 또는 math.e : 파이 또는 자연상수 e 출력
+```
