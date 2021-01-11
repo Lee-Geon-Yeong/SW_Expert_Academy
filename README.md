@@ -86,3 +86,33 @@ print(data)
 answer=7
 print(f"정답은 {answer}입니다.")
 ```
+
+### 6. 주요 라이브러리 문법과 유의점
++ 내장 함수 : print(), input()과 같은 기본 입출력 기능부터 sorted()와 같은 정렬 기능을 포함하고 있는 기본 내장 라이브러리이다. 파이썬 프로그램을 작성할 때 없어서는 안 될 필수적인 기능을 포함하고 있다.
++ itertools : 파이썬에서 반복되는 형태의 데이터를 처리하는 기능을 제공하는 라이브러리이다. 순열과 조합 라이브러리를 제공한다.
+```python
+permutations : 리스트와 같은 iterable 객체에서 r개의 데이터를 뽑아 일렬로 나열하는 모든 경우(순열)를 계산.
+               permutations는 클래스이므로 객체 초기화 이후에는 리스트 자료형으로 변환하여 사용.
+# 리스트 ['A', 'B', 'C']에서 3개(r=3)를 뽑아 나열하는 모든 경우 출력
+from itertools import permutations
+data=['A', 'B', 'C']
+result=list(permutations(data, 3))
+print(result)
+
+combinations : 리스트와 같은 iterable 객체에서 r개의 데이터를 뽑아 순서를 고려하지 않고 나열하는 모든 경우(조합)를 계산.
+               combinations는 클래스이므로 객체 초기화 이후에는 리스트 자료형으로 변환하여 사용.
+# 리스트 ['A', 'B', 'C']에서 2개(r=2)를 뽑아 순서에 상관없이 나열하는 모든 경우 출력
+from itertools import combinations
+data=['A', 'B', 'C']
+result=list(combinations(data, 2))
+print(result)
+
+product : permutations와 유사. 중복허용하는 순열 구하기
+combinations_with_replacement : combinations와 유사. 중복허용하는 조합 구하기
+```
+
+```
++ heapq : 힙(Heap) 기능을 제공하는 라이브러리이다. 우선순위 큐 기능을 구현하기 위해 사용한다.
++ bisect : 이진 탐색(Binary Search) 기능을 제공하는 라이브러리이다.
++ collections : 덱(deque), 카운터(Counter) 등의 유용한 자료구조를 포함하고 있는 라이브러리이다.
++ math : 필수적인 수학적 기능을 제공하는 라이브러리이다. 팩토리얼, 제곱근, 최대공약수(GCD), 삼각함수 관련 함수부터 파이(pi)와 같은 상수를 포함하고 있다.
