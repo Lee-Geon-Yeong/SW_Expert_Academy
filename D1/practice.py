@@ -19,4 +19,4 @@ for i in range(T):
     if check==True :
         print(f"#{i+1} {input_list[0:4]}/{input_list[4:6]}/{input_list[6:8]}")
     else:
-        print(f"#{i+1} -1")
+        print(f"#{i+1} -1") 
