@@ -9,4 +9,4 @@ for i in T:
 # for i in a:
 #     b.append(str(ord(i) - 64))
 # c = " ".join(b)
-# print(c)
+# print(c) 
