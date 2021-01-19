@@ -1,11 +1,9 @@
-T=int(input())
- 
-for test_case in range(1, T+1):
-    nums=list(map(int, input().split()))
-    result=0
-    for num in nums:
-        result=result+num
+T = int(input())
 
-    num_average=round(result/10)
-    print("#%d %d " % (test_case, num_average))
- 
+for i in range(T):
+    sum=0
+    input_list=list(map(int, input().split()))
+    for num in input_list:
+        sum+=num
+
+    print(f"#{i+1} {round(sum/10)}")
