@@ -6,3 +6,4 @@ for x in range(T):
         if y % 2 == 1:
             sum += y
     print(f'#{x+1} {sum}') 
+ 

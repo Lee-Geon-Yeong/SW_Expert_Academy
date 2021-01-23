@@ -6,4 +6,4 @@ for i in range(T):
     for num in input_list:
         sum+=num
 
-    print(f"#{i+1} {round(sum/10)}")
+    print(f"#{i+1} {round(sum/10)}") 
