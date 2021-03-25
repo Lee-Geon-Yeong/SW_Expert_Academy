@@ -59,6 +59,5 @@ def bfs():
     print(0) # 실패 
 
 bfs()
-  
-  
+
 # https://jeongchul.tistory.com/665?category=582040
