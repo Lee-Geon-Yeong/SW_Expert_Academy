@@ -1,22 +1,43 @@
-T=int(input())
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+class Rectangle:
+    def __init__(self, p1, p2):
+        self.p1 = p1
+        self.p2 = p2
+    def get_area(self):
+        self.p1.x
+        self.p1.y
+        self.p2.x
+        self.p2.y
+        return abs(self.p2.x-self.p1.x)*abs(self.p2.y-self.p1.y)
+    def get_perimeter(self):
+        self.p1.x
+        self.p1.y
+        self.p2.x
+        self.p2.y
+        return 2*(abs(self.p2.x-self.p1.x)+abs(self.p2.y-self.p1.y))
+    def is_square(self):
+        self.p1.x
+        self.p1.y
+        self.p2.x
+        self.p2.y
+        if abs(self.p2.x-self.p1.x) == abs(self.p2.y-self.p1.y):
+            return True
+        return False
 
-for i in range(T):
-    input_list=input()
-    check=True
-    if 1<=int(input_list[4:6])<=12:
-        if input_list[4:6]=='04' or input_list[4:6]=='06' or input_list[4:6]=='09' or input_list[4:6]=='11':
-            if 1>int(input_list[6:8]) or int(input_list[6:8])>30:
-                check=False
-        elif input_list[4:6]=='02':
-            if 1>int(input_list[6:8]) or int(input_list[6:8])>28:
-                check=False
-        else:
-            if 1>int(input_list[6:8]) or int(input_list[6:8])>31:
-                check=False
-    else:
-        check=False
+p1 = Point(1, 3)
+p2 = Point(3, 1)
+r1 = Rectangle(p1, p2)
+print(r1.get_area())
+print(r1.get_perimeter())
+print(r1.is_square())
 
-    if check==True :
-        print(f"#{i+1} {input_list[0:4]}/{input_list[4:6]}/{input_list[6:8]}")
-    else:
-        print(f"#{i+1} -1") 
+p3 = Point(3, 7)
+p4 = Point(6, 4)
+r2 = Rectangle(p3, p4)
+print(r2.get_area())
+print(r2.get_perimeter())
+print(r2.is_square())
